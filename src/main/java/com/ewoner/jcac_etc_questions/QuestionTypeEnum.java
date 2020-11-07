@@ -1,6 +1,6 @@
 package com.ewoner.jcac_etc_questions;
 
-enum QuestionTypeEnum {
+public enum QuestionTypeEnum {
 	MultipleChoice,
 	TrueFalse,
 	ShortAnswer,

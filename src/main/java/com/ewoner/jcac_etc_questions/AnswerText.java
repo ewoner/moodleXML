@@ -1,7 +1,16 @@
 package com.ewoner.jcac_etc_questions;
 
-class AnswerText extends Answer {
-	private String text;
+public class AnswerText extends Answer {
+
+    private String text;
+
+    public AnswerText() {
+        this( "" );
+    }
+
+    public AnswerText( String text ) {
+        this.text = text;
+    }
 
     /**
      * @return the text
@@ -13,7 +22,7 @@ class AnswerText extends Answer {
     /**
      * @param text the text to set
      */
-    public void setText(String text) {
+    public void setText( String text ) {
         this.text = text;
     }
 }

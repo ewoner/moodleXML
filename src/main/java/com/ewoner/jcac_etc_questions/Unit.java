@@ -1,6 +1,6 @@
 package com.ewoner.jcac_etc_questions;
 
-class Unit {
+public class Unit {
 	private String name;
 	private double multiplier;
 

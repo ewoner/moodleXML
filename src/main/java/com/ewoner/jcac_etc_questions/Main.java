@@ -27,6 +27,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+
 /**
  *
  * @author Brion Lang
@@ -37,12 +38,15 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        System.err.println("Hit enter to Exit");
+    public static void main( String[] args ) {
+        
+        
+        System.err.println( "Hit enter to Exit" );
         try {
-            System.err.println(System.in.read());
-        } catch (IOException ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+            System.err.println( System.in.read() );
+        }
+        catch ( IOException ex ) {
+            Logger.getLogger( Main.class.getName() ).log( Level.SEVERE, null, ex );
         }
     }
     

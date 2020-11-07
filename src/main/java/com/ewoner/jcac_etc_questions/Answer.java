@@ -1,8 +1,22 @@
 package com.ewoner.jcac_etc_questions;
 
-class Answer {
-	private double fraction;
-	private String feedback;
+public class Answer {
+
+    private double fraction;
+    private String feedback;
+
+    public Answer() {
+        this( 0.0, "" );
+    }
+
+    public Answer( double fraction ) {
+        this( fraction, "" );
+    }
+
+    public Answer( double fraction, String feedback ) {
+        this.fraction = fraction;
+        this.feedback = feedback;
+    }
 
     /**
      * @return the fraction
@@ -14,7 +28,7 @@ class Answer {
     /**
      * @param fraction the fraction to set
      */
-    public void setFraction(double fraction) {
+    public void setFraction( double fraction ) {
         this.fraction = fraction;
     }
 
@@ -28,7 +42,7 @@ class Answer {
     /**
      * @param feedback the feedback to set
      */
-    public void setFeedback(String feedback) {
+    public void setFeedback( String feedback ) {
         this.feedback = feedback;
     }
 }
