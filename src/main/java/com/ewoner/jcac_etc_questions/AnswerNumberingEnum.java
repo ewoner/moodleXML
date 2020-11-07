@@ -1,17 +1,17 @@
+package com.ewoner.jcac_etc_questions;
+
 enum AnswerNumberingEnum {
-	none("none",
+	none("none"),
 	abc("abc"),
 	ABCD("ABCD"),
 	numbers("123");
 	
-	AnswerNumberingEnum() {
-		this(name());
-	}
-	AnswerNumberingEum ( String xml ) {
+	
+	AnswerNumberingEnum ( String xml ) {
 		this.xml = xml;
 	}
 	
-	private String xml;
+	private final String xml;
 	
 	public String getXML (){
 		return xml;
