@@ -23,6 +23,8 @@
  */
 package com.ewoner.jcac_etc_questions;
 
+import com.ewoner.jcac_etc_questions.models.answers.AnswerText;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;

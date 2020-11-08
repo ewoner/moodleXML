@@ -1,10 +1,29 @@
-package com.ewoner.jcac_etc_questions;
+package com.ewoner.jcac_etc_questions.models.questions;
+
+import com.ewoner.jcac_etc_questions.models.answers.AnswerText;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.xml.namespace.QName;
+import javax.xml.stream.XMLEventReader;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.events.XMLEvent;
 
 
 public class QuestionShortAnswer extends QuestionAbstractMultiAnswer<AnswerText> {
+
+    public static Question parseXMLElement( XMLEventReader reader ) throws XMLStreamException {
+        QuestionShortAnswer rv = new QuestionShortAnswer();
+        while ( reader.hasNext() && reader.peek().isEndElement() && !reader.peek().asStartElement().getName().equals( new QName( "question" ) ) ) {
+            XMLEvent nextEvent = reader.nextEvent();
+            if ( nextEvent.isStartElement() ) {
+                String name = nextEvent.asStartElement().getName().toString();
+                System.out.println( "the name is =" + name );
+            }
+        }
+
+        return rv;
+    }
 
     private boolean usecase;
 

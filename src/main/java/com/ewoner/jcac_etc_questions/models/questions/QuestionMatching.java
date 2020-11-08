@@ -1,4 +1,6 @@
-package com.ewoner.jcac_etc_questions;
+package com.ewoner.jcac_etc_questions.models.questions;
+
+import com.ewoner.jcac_etc_questions.models.answers.AnswerMatchingPair;
 
 
 public class QuestionMatching extends QuestionAbstractMultiAnswer<AnswerMatchingPair> {

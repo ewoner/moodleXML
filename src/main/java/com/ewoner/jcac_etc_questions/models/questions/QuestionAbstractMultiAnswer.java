@@ -21,7 +21,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.ewoner.jcac_etc_questions;
+package com.ewoner.jcac_etc_questions.models.questions;
+
+import com.ewoner.jcac_etc_questions.models.answers.Answer;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -35,7 +37,7 @@ import java.util.List;
  * @version 0.0.0
  * @param <A>
  */
-public abstract class QuestionAbstractMultiAnswer<A extends Answer> extends Question implements MultiAnswerQuestion<A> {
+public abstract class QuestionAbstractMultiAnswer<A extends Answer> extends QuestionFeedback implements MultiAnswerQuestions<A> {
 
     List<A> answers = new ArrayList<>();
 

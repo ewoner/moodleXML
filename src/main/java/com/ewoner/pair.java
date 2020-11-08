@@ -21,31 +21,46 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.ewoner.jcac_etc_questions;
+package com.ewoner;
 
-import java.util.Collection;
-import java.util.List;
+import java.util.Objects;
 
 
 /**
  *
  * @author Brion Lang
- * @param <A>
  */
-public interface MultiAnswerQuestion<A extends Answer> {
+public class pair<T, U> {
 
-    public boolean addAllAnswers( Collection<A> answersToAdd );
+    public final T first;
+    public final U second;
 
-    public boolean addAnswer( A answerToAdd );
+    public pair( T first, U second ) {
+        this.first = first;
+        this.second = second;
+    }
 
-    public List<Answer> getAnswers();
+    public pair( pair<T, U> p ) {
+        this.first = p.first;
+        this.second = p.second;
+    }
 
-    public void setAnswers( List<A> answers );
+    @Override
+    public boolean equals( Object ob ) {
+        if ( ob instanceof pair ) {
+            pair obP = ( pair ) ob;
+            if ( this.first.equals( obP.first ) && this.second.equals( obP.second ) ) {
+                return true;
+            }
+        }
+        return false;
+    }
 
-    public int numOfAnswers();
-
-    public boolean removeAnswer( A answerToRemove );
-
-    public Answer removeAnswer( int index );
-
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 47 * hash + Objects.hashCode( this.first );
+        hash = 47 * hash + Objects.hashCode( this.second );
+        return hash;
+    }
 }
