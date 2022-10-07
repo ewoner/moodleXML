@@ -1,0 +1,6 @@
+<answer fraction="-50" format="html">
+      <text><![CDATA[<p><b>if</b>/<b>else</b><br></p>]]></text>
+      <feedback format="html">
+        <text>This is a text</text>
+      </feedback>
+</answer>

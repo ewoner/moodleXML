@@ -1,0 +1,104 @@
+<question type="multichoiceset">
+<name>
+<text>Looping structures</text>
+</name>
+<questiontext format="html">
+<text><![CDATA[<p>(Choose ALL that Apply) Which of the following structures are types of looping structures commonly found in programming?<br></p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text></text>
+</generalfeedback>
+<defaultgrade>1.0</defaultgrade>
+<penalty>0.3333333</penalty>
+<hidden>0</hidden>
+<idnumber>3.04.10 </idnumber>
+<shuffleanswers>true</shuffleanswers>
+<correctfeedback format="html">
+<text><![CDATA[Your answer is correct.]]></text>
+</correctfeedback>
+<incorrectfeedback format="html">
+<text><![CDATA[Your answer is incorrect.]]></text>
+</incorrectfeedback>
+<answernumbering>none</answernumbering>
+<showstandardinstruction>1</showstandardinstruction>
+<answer fraction="0.0" format="html">
+<text><![CDATA[<p><b>if</b>/<b>else</b><br></p>]]></text>
+<feedback format="html">
+<text></text>
+</feedback>
+</answer>
+<answer fraction="0.0" format="html">
+<text><![CDATA[<p><b>if</b>/<b>else if</b>/<b>else</b><br></p>]]></text>
+<feedback format="html">
+<text></text>
+</feedback>
+</answer>
+<answer fraction="100.0" format="html">
+<text><![CDATA[<p><b>while</b><br></p>]]></text>
+<feedback format="html">
+<text></text>
+</feedback>
+</answer>
+<answer fraction="100.0" format="html">
+<text><![CDATA[<p><b>for</b><br></p>]]></text>
+<feedback format="html">
+<text></text>
+</feedback>
+</answer>
+<answer fraction="100.0" format="html">
+<text><![CDATA[<p><b>for each</b></p>]]></text>
+<feedback format="html">
+<text></text>
+</feedback>
+</answer>
+</question>
+
+<question type="multichoiceset">
+<name>
+<text>Q9</text>
+</name>
+<questiontext format="html">
+<text><![CDATA[<p>(Choose the Best Answer) Which regex finds lines that end with 1 or more spaces?</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text></text>
+</generalfeedback>
+<defaultgrade>1.0</defaultgrade>
+<penalty>0.3333333</penalty>
+<hidden>0</hidden>
+<idnumber></idnumber>
+<shuffleanswers>true</shuffleanswers>
+<correctfeedback format="html">
+<text><![CDATA[Your answer is correct.]]></text>
+</correctfeedback>
+<incorrectfeedback format="html">
+<text><![CDATA[Your answer is incorrect.]]></text>
+</incorrectfeedback>
+<answernumbering>none</answernumbering>
+<showstandardinstruction>1</showstandardinstruction>
+<answer fraction="0.0" format="html">
+<text><![CDATA[<p>$\s+</p>]]></text>
+<feedback format="html">
+<text></text>
+</feedback>
+</answer>
+<answer fraction="0.0" format="html">
+<text><![CDATA[<p>\s+^</p>]]></text>
+<feedback format="html">
+<text></text>
+</feedback>
+</answer>
+<answer fraction="0.0" format="html">
+<text><![CDATA[<p>^\s+</p>]]></text>
+<feedback format="html">
+<text></text>
+</feedback>
+</answer>
+<answer fraction="100.0" format="html">
+<text><![CDATA[<p>\s+$</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>Correct!<br></p>]]></text>
+</feedback>
+</answer>
+</question>
+
